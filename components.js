@@ -1,42 +1,42 @@
 /* ── NAV HTML ── */
 const NAV_HTML = `
 <nav id="navbar">
-  <a href="index.html" class="nav-logo">Riyan <span>Foods & Spices</span></a>
+  <a href="/index" class="nav-logo">Riyan <span>Foods & Spices</span></a>
   <div class="nav-center">
     <ul class="nav-links">
-      <li><a href="index.html">Home</a></li>
+      <li><a href="/index">Home</a></li>
       <li class="nav-item">
         <a href="/products">Products ▾</a>
         <div class="nav-dropdown" style="min-width:220px">
           <a href="/products" style="color:var(--gold);font-size:.62rem;letter-spacing:.16em;padding-bottom:4px">— All Products —</a>
-          <a href="product-cumin.html">Cumin Seeds</a>
-          <a href="product-chilli.html">Red Chilli Powder</a>
-          <a href="product-turmeric.html">Turmeric Powder</a>
-          <a href="product-coriander.html">Coriander</a>
-          <a href="product-fenugreek.html">Fenugreek Seeds</a>
-          <a href="product-blackpepper.html">Black Pepper</a>
-          <a href="product-moringa.html">Moringa Powder</a>
-          <a href="product-rice.html">Basmati Rice</a>
-          <a href="product-maize.html">Maize</a>
-          <a href="product-chickpeas.html">Chickpeas</a>
-          <a href="product-lentils.html">Yellow Lentils</a>
-          <a href="product-moong.html">Green Moong</a>
-          <a href="product-bajra.html">Bajra (Pearl Millet)</a>
-          <a href="product-jowar.html">Jowar (Sorghum)</a>
-          <a href="product-ragi.html">Ragi (Finger Millet)</a>
-          <a href="product-onion-powder.html">Onion Powder</a>
-          <a href="product-garlic-powder.html">Garlic Powder</a>
+          <a href="/product-cumin">Cumin Seeds</a>
+          <a href="/product-chilli">Red Chilli Powder</a>
+          <a href="/product-turmeric">Turmeric Powder</a>
+          <a href="/product-coriander">Coriander</a>
+          <a href="/product-fenugreek">Fenugreek Seeds</a>
+          <a href="/product-blackpepper">Black Pepper</a>
+          <a href="/product-moringa">Moringa Powder</a>
+          <a href="/product-rice">Basmati Rice</a>
+          <a href="/product-maize">Maize</a>
+          <a href="/product-chickpeas">Chickpeas</a>
+          <a href="/product-lentils">Yellow Lentils</a>
+          <a href="/product-moong">Green Moong</a>
+          <a href="/product-bajra">Bajra (Pearl Millet)</a>
+          <a href="/product-jowar">Jowar (Sorghum)</a>
+          <a href="/product-ragi">Ragi (Finger Millet)</a>
+          <a href="/product-onion-powder">Onion Powder</a>
+          <a href="/product-garlic-powder">Garlic Powder</a>
         </div>
       </li>
-      <li><a href="about.html">About</a></li>
-      <li><a href="why.html">Why Us</a></li>
-      <li><a href="quality.html">Quality</a></li>
-      <li><a href="markets.html">Markets</a></li>
-      <li><a href="process.html">Process</a></li>
+      <li><a href="/about">About</a></li>
+      <li><a href="/why">Why Us</a></li>
+      <li><a href="/quality">Quality</a></li>
+      <li><a href="/markets">Markets</a></li>
+      <li><a href="/process">Process</a></li>
     </ul>
   </div>
   <div class="nav-right">
-    <a href="contact.html" class="nav-cta btn">Get Quote</a>
+    <a href="/contact" class="nav-cta btn">Get Quote</a>
     <div class="nav-hamburger" id="nav-burger">
       <span></span><span></span><span></span>
     </div>
@@ -44,38 +44,38 @@ const NAV_HTML = `
 </nav>
 <div id="mobile-menu">
   <div class="mobile-section-label">Navigate</div>
-  <a href="index.html">Home</a>
-  <a href="products.html">All Products</a>
+  <a href="/index">Home</a>
+  <a href="/products">All Products</a>
   <div class="mobile-section-label">Spices</div>
-  <a href="product-cumin.html">— Cumin Seeds</a>
-  <a href="product-chilli.html">— Red Chilli Powder</a>
-  <a href="product-turmeric.html">— Turmeric Powder</a>
-  <a href="product-coriander.html">— Coriander</a>
-  <a href="product-fenugreek.html">— Fenugreek Seeds</a>
-  <a href="product-blackpepper.html">— Black Pepper</a>
+  <a href="/product-cumin">— Cumin Seeds</a>
+  <a href="/product-chilli">— Red Chilli Powder</a>
+  <a href="/product-turmeric">— Turmeric Powder</a>
+  <a href="/product-coriander">— Coriander</a>
+  <a href="/product-fenugreek">— Fenugreek Seeds</a>
+  <a href="/product-blackpepper">— Black Pepper</a>
   
   <div class="mobile-section-label">Grains & Pulses</div>
 
-  <a href="product-rice.html">— Basmati Rice</a>
-  <a href="product-maize.html">— Maize</a>
-  <a href="product-chickpeas.html">— Chickpeas</a>
-  <a href="product-lentils.html">— Yellow Lentils</a>
-  <a href="product-moong.html">— Green Moong</a>
+  <a href="/product-rice">— Basmati Rice</a>
+  <a href="/product-maize">— Maize</a>
+  <a href="/product-chickpeas">— Chickpeas</a>
+  <a href="/product-lentils">— Yellow Lentils</a>
+  <a href="/product-moong">— Green Moong</a>
   <div class="mobile-section-label">Millets & Dehydrated</div>
-  <a href="product-bajra.html">— Bajra (Pearl Millet)</a>
-  <a href="product-jowar.html">— Jowar (Sorghum)</a>
-  <a href="product-ragi.html">— Ragi (Finger Millet)</a>
-  <a href="product-moringa.html">— Moringa Powder</a>
-  <a href="product-onion-powder.html">— Onion Powder</a>
-  <a href="product-garlic-powder.html">— Garlic Powder</a>
+  <a href="/product-bajra">— Bajra (Pearl Millet)</a>
+  <a href="/product-jowar">— Jowar (Sorghum)</a>
+  <a href="/product-ragi">— Ragi (Finger Millet)</a>
+  <a href="/product-moringa">— Moringa Powder</a>
+  <a href="/product-onion-powder">— Onion Powder</a>
+  <a href="/product-garlic-powder">— Garlic Powder</a>
   <div class="mobile-section-label">Company</div>
-  <a href="about.html">About Us</a>
-  <a href="why.html">Why Choose Us</a>
-  <a href="quality.html">Quality & Certifications</a>
-  <a href="markets.html">Global Markets</a>
-  <a href="process.html">Export Process</a>
+  <a href="/about">About Us</a>
+  <a href="/why">Why Choose Us</a>
+  <a href="/quality">Quality & Certifications</a>
+  <a href="/markets">Global Markets</a>
+  <a href="/process">Export Process</a>
 
-  <a href="contact.html" class="mobile-cta">Request a Quote</a>
+  <a href="/contact" class="mobile-cta">Request a Quote</a>
 </div>
 `;
 
@@ -83,7 +83,7 @@ const FOOTER_HTML = `
 <footer>
   <div class="footer-top">
     <div class="footer-brand">
-      <a href="index.html" class="footer-logo">Riyan <span>Foods & Spices LLP</span></a>
+      <a href="/index" class="footer-logo">Riyan <span>Foods & Spices LLP</span></a>
       <p>An Indian agri-commodity exporter, working with global buyers across multiple markets. Registered with APEDA and the Spices Board, with a focus on quality and reliable export practices.</p>
       <div class="footer-certs">
         <span class="footer-cert">APEDA</span>
@@ -101,23 +101,23 @@ const FOOTER_HTML = `
     <div class="footer-col">
       <h4>Products</h4>
       <ul>
-        <li><a href="product-cumin.html">Cumin Seeds</a></li>
-        <li><a href="product-chilli.html">Red Chilli Powder</a></li>
-        <li><a href="product-turmeric.html">Turmeric Powder</a></li>
-        <li><a href="product-moringa.html">Moringa Powder</a></li>
-        <li><a href="product-coriander.html">Coriander</a></li>
-        <li><a href="products.html">Full Catalogue →</a></li>
+        <li><a href="/product-cumin">Cumin Seeds</a></li>
+        <li><a href="/product-chilli">Red Chilli Powder</a></li>
+        <li><a href="/product-turmeric">Turmeric Powder</a></li>
+        <li><a href="/product-moringa">Moringa Powder</a></li>
+        <li><a href="/product-coriander">Coriander</a></li>
+        <li><a href="/products">Full Catalogue →</a></li>
       </ul>
     </div>
     <div class="footer-col">
       <h4>Company</h4>
       <ul>
-        <li><a href="about.html">About Us</a></li>
-        <li><a href="quality.html">Quality & Certs</a></li>
-        <li><a href="markets.html">Global Markets</a></li>
-        <li><a href="process.html">Export Process</a></li>
+        <li><a href="/about">About Us</a></li>
+        <li><a href="/quality">Quality & Certs</a></li>
+        <li><a href="/markets">Global Markets</a></li>
+        <li><a href="/process">Export Process</a></li>
 
-        <li><a href="contact.html">Contact</a></li>
+        <li><a href="/contact">Contact</a></li>
       </ul>
     </div>
     <div class="footer-col">
