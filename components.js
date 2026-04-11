@@ -6,9 +6,9 @@ const NAV_HTML = `
     <ul class="nav-links">
       <li><a href="index.html">Home</a></li>
       <li class="nav-item">
-        <a href="products.html">Products ▾</a>
+        <a href="/products">Products ▾</a>
         <div class="nav-dropdown" style="min-width:220px">
-          <a href="products.html" style="color:var(--gold);font-size:.62rem;letter-spacing:.16em;padding-bottom:4px">— All Products —</a>
+          <a href="/products" style="color:var(--gold);font-size:.62rem;letter-spacing:.16em;padding-bottom:4px">— All Products —</a>
           <a href="product-cumin.html">Cumin Seeds</a>
           <a href="product-chilli.html">Red Chilli Powder</a>
           <a href="product-turmeric.html">Turmeric Powder</a>
