@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Why Choose Us — Riyan Foods and Spices LLP</title>
+<meta name="description" content="Why global importers trust Riyan Foods and Spices LLP: APEDA, FSSAI & Spices Board certified, direct farm sourcing, 24h quote response, dedicated export manager, full documentation.">
+<meta name="keywords" content="best Indian agri-commodity exporter, reliable spice supplier India, APEDA certified exporter Gujarat, trusted Indian food exporter">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='4' fill='%230E0E0E'/><text x='50%25' y='54%25' dominant-baseline='middle' text-anchor='middle' font-family='Georgia,serif' font-size='20' font-weight='600' fill='%23C2A56D'>R</text></svg>">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<style>
+.why-hero { padding:140px 5vw 80px; background:var(--ink); position:relative; overflow:hidden; }
+.why-hero::before { content:''; position:absolute; inset:0; background: radial-gradient(ellipse 60% 55% at 65% 35%,rgba(194,165,109,.08),transparent 60%), radial-gradient(ellipse 40% 60% at 10% 80%,rgba(107,142,35,.06),transparent 60%); }
+.why-hero-inner { max-width:1280px; margin:0 auto; display:grid; grid-template-columns:1fr 1fr; gap:5rem; align-items:center; position:relative; z-index:1; }
+.why-hero-stats { display:grid; grid-template-columns:1fr 1fr; gap:3px; }
+.whs-card { padding:2rem 1.8rem; background:rgba(246,243,237,.03); border:1px solid var(--border-dark); transition:border-color .28s,background .28s; cursor:default; }
+.whs-card:hover { border-color:rgba(194,165,109,.3); background:rgba(194,165,109,.04); }
+.whs-card:first-child { grid-column:span 2; display:flex; align-items:center; gap:2rem; }
+.whs-num { font-family:var(--serif); font-size:3rem; font-weight:600; color:var(--gold); line-height:1; flex-shrink:0; }
+.whs-card:not(:first-child) .whs-num { font-size:2.2rem; }
+.whs-label { font-size:.72rem; letter-spacing:.12em; text-transform:uppercase; color:rgba(246,243,237,.4); margin-top:.4rem; }
+.whs-desc { font-size:.8rem; color:rgba(246,243,237,.4); line-height:1.6; margin-top:.3rem; }
+
+.pillars-section { padding:7rem 5vw; background:var(--cream); }
+.pillars-inner { max-width:1280px; margin:0 auto; }
+.pillars-header { text-align:center; max-width:680px; margin:0 auto 5rem; }
+.pillars-grid { display:grid; grid-template-columns:repeat(3,1fr); gap:3px; }
+.pillar-card { padding:3rem 2.5rem; background:white; transition:box-shadow .3s,transform .3s; cursor:default; }
+.pillar-card:hover { box-shadow:0 12px 40px rgba(14,14,14,.1); transform:translateY(-3px); }
+.pillar-num { font-family:var(--serif); font-size:.85rem; font-weight:500; color:rgba(194,165,109,.5); letter-spacing:.1em; margin-bottom:1.5rem; }
+.pillar-icon { width:54px; height:54px; border-radius:50%; border:1px solid rgba(194,165,109,.25); background:rgba(194,165,109,.07); display:flex; align-items:center; justify-content:center; margin-bottom:1.6rem; }
+.pillar-icon svg { width:24px; height:24px; color:var(--gold); }
+.pillar-title { font-family:var(--serif); font-size:1.25rem; font-weight:500; color:var(--ink); margin-bottom:.8rem; line-height:1.25; }
+.pillar-desc { font-size:.85rem; color:rgba(14,14,14,.5); line-height:1.8; margin-bottom:1.2rem; }
+.pillar-points { list-style:none; display:flex; flex-direction:column; gap:.5rem; }
+.pillar-points li { font-size:.78rem; color:rgba(14,14,14,.45); padding-left:1.1rem; position:relative; line-height:1.5; }
+.pillar-points li::before { content:'→'; position:absolute; left:0; color:var(--gold); font-size:.72rem; }
+
+.comparison-section { padding:7rem 5vw; background:var(--ink); }
+.comparison-inner { max-width:1000px; margin:0 auto; }
+.comparison-header { text-align:center; margin-bottom:4rem; }
+.comp-table { width:100%; border-collapse:collapse; background:rgba(246,243,237,.02); border:1px solid var(--border-dark); border-radius:var(--radius); overflow:hidden; }
+.comp-table th { padding:1.2rem 1.5rem; font-size:.72rem; letter-spacing:.14em; text-transform:uppercase; border-bottom:1px solid var(--border-dark); text-align:left; font-weight:500; }
+.comp-table th:first-child { color:rgba(246,243,237,.4); width:38%; }
+.comp-table th:nth-child(2) { color:var(--gold); background:rgba(194,165,109,.07); border-left:1px solid var(--border-dark); text-align:center; }
+.comp-table th:last-child { color:rgba(246,243,237,.3); border-left:1px solid var(--border-dark); text-align:center; }
+.comp-table td { padding:1rem 1.5rem; font-size:.85rem; border-bottom:1px solid rgba(246,243,237,.04); vertical-align:middle; }
+.comp-table td:first-child { color:rgba(246,243,237,.55); }
+.comp-table td:nth-child(2) { background:rgba(194,165,109,.04); border-left:1px solid var(--border-dark); text-align:center; color:rgba(246,243,237,.8); }
+.comp-table td:last-child { border-left:1px solid var(--border-dark); text-align:center; color:rgba(246,243,237,.3); }
+.comp-table tr:last-child td { border-bottom:none; }
+.check { color:#4CAF50; font-size:1.1rem; }
+.cross { color:rgba(246,243,237,.2); font-size:1rem; }
+.partial { color:var(--gold); font-size:.8rem; letter-spacing:.06em; }
+
+.cert-strip { padding:4rem 5vw; background:var(--ink); border-top:1px solid var(--border-dark); border-bottom:1px solid var(--border-dark); }
+.cert-strip-inner { max-width:1280px; margin:0 auto; display:flex; align-items:center; justify-content:space-between; gap:2rem; flex-wrap:wrap; }
+.cert-strip-label { font-size:.68rem; letter-spacing:.2em; text-transform:uppercase; color:rgba(246,243,237,.3); flex-shrink:0; }
+.cert-strip-badges { display:flex; gap:1rem; flex-wrap:wrap; align-items:center; }
+.csb { padding:10px 22px; border:1px solid var(--border-dark); border-radius:var(--radius); font-size:.72rem; letter-spacing:.1em; text-transform:uppercase; color:rgba(246,243,237,.5); transition:border-color .25s,color .25s; cursor:default; }
+.csb:hover { border-color:var(--gold); color:var(--gold); }
+
+.why-cta { padding:7rem 5vw; background:var(--ink); text-align:center; position:relative; overflow:hidden; }
+.why-cta::before { content:''; position:absolute; top:-120px; left:50%; transform:translateX(-50%); width:500px; height:500px; background:radial-gradient(circle,rgba(194,165,109,.07),transparent 65%); pointer-events:none; }
+.why-cta-inner { position:relative; z-index:1; max-width:640px; margin:0 auto; }
+
+@media(max-width:900px) {
+  .why-hero-inner { grid-template-columns:1fr; gap:3rem; }
+  .pillars-grid { grid-template-columns:1fr 1fr; }
+}
+@media(max-width:620px) {
+  .why-hero { padding:100px 4vw 60px; }
+  .why-hero-stats { grid-template-columns:1fr 1fr; }
+  .whs-card:first-child { grid-column:span 2; flex-direction:column; align-items:flex-start; gap:.5rem; }
+  .whs-card:first-child .whs-num { font-size:2.5rem; }
+  .whs-num { font-size:1.8rem !important; }
+  .pillars-section { padding:5rem 4vw; }
+  .pillars-grid { grid-template-columns:1fr; gap:2px; }
+  .pillar-card { padding:2.2rem 1.8rem; }
+  .pillar-card:hover { transform:none; }
+  .comparison-section { padding:5rem 4vw; }
+  .comp-table th, .comp-table td { padding:.85rem .8rem; font-size:.78rem; }
+  .cert-strip { padding:3rem 4vw; }
+  .cert-strip-inner { flex-direction:column; align-items:flex-start; gap:1.2rem; }
+  .csb { padding:8px 16px; font-size:.68rem; }
+  .why-cta { padding:5rem 4vw; }
+}
+</style>
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Riyan Foods and Spices LLP">
+  <meta property="og:title" content="Why Choose Us — Riyan Foods and Spices LLP">
+  <meta property="og:description" content="Why global importers trust Riyan Foods and Spices LLP: APEDA, FSSAI & Spices Board certified, direct farm sourcing, 24h quote response, dedicated export manager.">
+  <meta property="og:image" content="https://riyanspices.com/og-image.jpg">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Why Choose Us — Riyan Foods and Spices LLP">
+  <meta name="twitter:description" content="Why global importers trust Riyan Foods and Spices LLP: APEDA, FSSAI & Spices Board certified, direct farm sourcing, 24h quote response, dedicated export manager.">
+  <meta name="robots" content="index, follow">
+  <meta name="author" content="Riyan Foods and Spices LLP">
+</head>
+<body>
+<div id="nav-placeholder"></div>
+
+<!-- ── HERO ── -->
+<section class="why-hero">
+  <div class="why-hero-inner">
+    <div>
+      <div class="page-hero-breadcrumb"><a href="index.html">Home</a><span>›</span> Why Choose Us</div>
+      <div class="section-eyebrow reveal">Our Advantage</div>
+      <h1 class="section-title reveal d1">Why global buyers<br><em>trust Riyan Spices</em></h1>
+      <div class="gold-line reveal d2"></div>
+      <p class="section-sub reveal d2">From verified Indian farms to your warehouse — fully certified, export-ready, and built for long-term global trade partnerships.</p>
+      <div style="display:flex;gap:12px;margin-top:2.2rem;flex-wrap:wrap" class="reveal d3">
+        <a href="contact.html" class="btn btn-gold">Get a Quote <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
+        <a href="quality.html" class="btn btn-outline-cream">Our Certifications</a>
+      </div>
+    </div>
+    <div class="why-hero-stats reveal right">
+      <div class="whs-card">
+        <div class="whs-num">5</div>
+        <div>
+          <div class="whs-label">Certifications Held</div>
+          <div class="whs-desc">APEDA, FSSAI, Spices Board, IEC &amp; GST — fully certified from day one for international trade.</div>
+        </div>
+      </div>
+      <div class="whs-card">
+        <div class="whs-num" data-count="48" data-suffix="+">48+</div>
+        <div class="whs-label">Countries</div>
+      </div>
+      <div class="whs-card">
+        <div class="whs-num" data-count="500" data-suffix="MT">500MT</div>
+        <div class="whs-label">Monthly Capacity</div>
+      </div>
+      <div class="whs-card">
+        <div class="whs-num">24h</div>
+        <div class="whs-label">Quote Response</div>
+      </div>
+      <div class="whs-card">
+        <div class="whs-num">15+</div>
+        <div class="whs-label">Export Products</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ── PILLARS ── -->
+<section class="pillars-section">
+  <div class="pillars-inner">
+    <div class="pillars-header">
+      <div class="section-eyebrow olive center reveal">6 Reasons</div>
+      <h2 class="section-title dark reveal d1">What makes us different</h2>
+      <div class="gold-line center reveal d2"></div>
+      <p class="section-sub dark reveal d2">
+        Every importer asks the same question: why you? Here are the key factors clients consider when working with Riyan.
+      </p>
+    </div>
+
+    <div class="pillars-grid">
+
+      <!-- 01 -->
+      <div class="pillar-card reveal">
+        <div class="pillar-num">01</div>
+        <div class="pillar-icon">
+          <!-- SAME SVG -->
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/></svg>
+        </div>
+        <div class="pillar-title">Certified & Compliant</div>
+        <div class="pillar-desc">
+          Registered with APEDA, FSSAI, Spices Board, IEC, and GST. Products are handled in line with applicable export and destination requirements.
+        </div>
+        <ul class="pillar-points">
+          <li>Testing conducted as per buyer or market requirements</li>
+          <li>Aflatoxin and pesticide checks available if required</li>
+          <li>CoA and related documents provided as applicable</li>
+          <li>Phytosanitary certificate arranged when required</li>
+        </ul>
+      </div>
+
+      <!-- 02 -->
+      <div class="pillar-card reveal d1">
+        <div class="pillar-num">02</div>
+        <div class="pillar-icon">
+          <!-- SAME SVG -->
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z"/><path d="M9 22V12h6v10"/></svg>
+        </div>
+        <div class="pillar-title">Sourcing Network</div>
+        <div class="pillar-desc">
+          Sourcing through verified farmers, traders, and mandis across Rajasthan, Andhra Pradesh, Gujarat, Tamil Nadu, and Madhya Pradesh.
+        </div>
+        <ul class="pillar-points">
+          <li>Traceability maintained as per batch and supplier</li>
+          <li>Flexible sourcing based on availability</li>
+          <li>Focus on consistent specifications</li>
+          <li>Efficient supply chain coordination</li>
+        </ul>
+      </div>
+
+      <!-- 03 -->
+      <div class="pillar-card reveal d2">
+        <div class="pillar-num">03</div>
+        <div class="pillar-icon">
+          <!-- SAME SVG -->
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M9 17a2 2 0 11-4 0 2 2 0 014 0zM19 17a2 2 0 11-4 0 2 2 0 014 0z"/><path d="M13 16V6a1 1 0 00-1-1H4a1 1 0 00-1 1v10a1 1 0 001 1h1m8-1a1 1 0 01-1 1H9m4-1V8a1 1 0 011-1h2.586a1 1 0 01.707.293l3.414 3.414a1 1 0 01.293.707V16a1 1 0 01-1 1h-1"/></svg>
+        </div>
+        <div class="pillar-title">Reliable Supply</div>
+        <div class="pillar-desc">
+          Supply planning supported by storage and sourcing network to ensure smooth order fulfillment.
+        </div>
+        <ul class="pillar-points">
+          <li>Dispatch timelines aligned with orders</li>
+          <li>Proper storage practices followed</li>
+          <li>Advance communication on seasonal changes</li>
+          <li>Flexible shipment planning</li>
+        </ul>
+      </div>
+
+      <!-- 04 -->
+      <div class="pillar-card reveal">
+        <div class="pillar-num">04</div>
+        <div class="pillar-icon">
+          <!-- SAME SVG -->
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+        </div>
+        <div class="pillar-title">Transparent Pricing</div>
+        <div class="pillar-desc">
+          Clear and competitive pricing based on product specifications, packaging, and shipment terms.
+        </div>
+        <ul class="pillar-points">
+          <li>FOB / CIF / CFR options available</li>
+          <li>Pricing based on order volume</li>
+          <li>No hidden charges</li>
+          <li>Market updates on request</li>
+        </ul>
+      </div>
+
+      <!-- 05 -->
+      <div class="pillar-card reveal d1">
+        <div class="pillar-num">05</div>
+        <div class="pillar-icon">
+          <!-- SAME SVG -->
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M20 7l-8-4-8 4m16 0l-8 4m8-4v10l-8 4m0-10L4 7m8 4v10M4 7v10l8 4"/></svg>
+        </div>
+        <div class="pillar-title">Custom Packaging</div>
+        <div class="pillar-desc">
+          Private label and bulk packaging options available in PP woven, HDPE, and vacuum formats.
+        </div>
+        <ul class="pillar-points">
+          <li>Standard 25kg / 50kg packaging</li>
+          <li>Custom sizes based on requirement</li>
+          <li>Branding and label customization</li>
+          <li>Custom packaging subject to MOQ</li>
+        </ul>
+      </div>
+
+      <!-- 06 -->
+      <div class="pillar-card reveal d2">
+        <div class="pillar-num">06</div>
+        <div class="pillar-icon">
+          <!-- SAME SVG -->
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0z"/></svg>
+        </div>
+        <div class="pillar-title">Export Support</div>
+        <div class="pillar-desc">
+          Direct communication and support provided throughout the export process, from inquiry to shipment.
+        </div>
+        <ul class="pillar-points">
+          <li>Single point of coordination</li>
+          <li>WhatsApp and email communication</li>
+          <li>Sample coordination support</li>
+          <li>Documentation assistance as required</li>
+        </ul>
+      </div>
+
+    </div>
+  </div>
+</section>
+<!-- ── COMPARISON ── -->
+<section class="comparison-section">
+  <div class="comparison-inner container">
+    <div class="comparison-header">
+      <div class="section-eyebrow center reveal">How We Compare</div>
+      <h2 class="section-title reveal d1">Riyan vs. typical<br><em>Indian agri exporter</em></h2>
+    </div>
+
+    <div class="reveal d2" style="overflow-x:auto;-webkit-overflow-scrolling:touch;">
+      <table class="comp-table">
+        <thead>
+          <tr>
+            <th>Feature</th>
+            <th>✦ Riyan Foods &amp; Spices LLP</th>
+            <th>Typical Supplier</th>
+          </tr>
+        </thead>
+
+        <tbody>
+
+          <tr>
+            <td>APEDA Registration</td>
+            <td><span class="check">✓ Registered</span></td>
+            <td><span class="partial">Varies by supplier</span></td>
+          </tr>
+
+          <tr>
+            <td>Spices Board Registration</td>
+            <td><span class="check">✓ Registered</span></td>
+            <td><span class="partial">May vary</span></td>
+          </tr>
+
+          <tr>
+            <td>FSSAI License</td>
+            <td><span class="check">✓ Licensed</span></td>
+            <td><span class="partial">May vary</span></td>
+          </tr>
+
+          <tr>
+            <td>IEC (Import Export Code)</td>
+            <td><span class="check">✓ Available</span></td>
+            <td><span class="partial">Required for export</span></td>
+          </tr>
+
+          <tr>
+            <td>Lab Testing (Pesticide / Aflatoxin)</td>
+            <td><span class="check">✓ Conducted as required</span></td>
+            <td><span class="partial">Often based on buyer request</span></td>
+          </tr>
+
+          <tr>
+            <td>Certificate of Analysis (CoA)</td>
+            <td><span class="check">✓ Provided as applicable</span></td>
+            <td><span class="partial">May not always be included</span></td>
+          </tr>
+
+          <tr>
+            <td>Traceability</td>
+            <td><span class="check">✓ Maintained at batch/supplier level</span></td>
+            <td><span class="partial">Varies by supplier</span></td>
+          </tr>
+
+          <tr>
+            <td>Product Range</td>
+            <td><span class="check">✓ Spices and selected agri-products</span></td>
+            <td><span class="partial">Often category-specific</span></td>
+          </tr>
+
+          <tr>
+            <td>Private Label / Custom Packaging</td>
+            <td><span class="check">✓ Available (MOQ applicable)</span></td>
+            <td><span class="partial">Limited or conditional</span></td>
+          </tr>
+
+          <tr>
+            <td>Client Communication</td>
+            <td><span class="check">✓ Direct and responsive</span></td>
+            <td><span class="partial">May involve multiple contacts</span></td>
+          </tr>
+
+          <tr>
+            <td>Pre-shipment Sample</td>
+            <td><span class="check">✓ Available on request</span></td>
+            <td><span class="partial">Often chargeable</span></td>
+          </tr>
+
+          <tr>
+            <td>Quotation Response</td>
+            <td><span class="check">✓ Typically within reasonable timeframe</span></td>
+            <td><span class="partial">Varies by supplier</span></td>
+          </tr>
+
+        </tbody>
+      </table>
+    </div>
+  </div>
+</section>
+<!-- ── CERT STRIP ── -->
+<section class="cert-strip">
+  <div class="cert-strip-inner">
+    <div class="cert-strip-label">Certifications &amp; Registrations</div>
+    <div class="cert-strip-badges">
+      <div class="csb">APEDA Registered</div>
+      <div class="csb">FSSAI Licensed</div>
+      <div class="csb">Spices Board</div>
+      <div class="csb">IEC Certified</div>
+      <div class="csb">GST Registered</div>
+    </div>
+    <a href="quality.html" class="btn btn-outline-gold" style="flex-shrink:0">View All Certs <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
+  </div>
+</section>
+
+<!-- ── FINAL CTA ── -->
+<section class="why-cta">
+  <div class="why-cta-inner">
+    <div class="section-eyebrow center reveal">Ready to Start?</div>
+    <h2 class="section-title reveal d1">Let's build a<br><em>long-term supply partnership</em></h2>
+    <div class="gold-line center reveal d2"></div>
+    <p class="section-sub reveal d2">Send us your requirement and get a competitive, market-specific quote within 24 hours. No commitment required for the first sample.</p>
+    <div style="display:flex;gap:14px;justify-content:center;flex-wrap:wrap;margin-top:2.5rem" class="reveal d3">
+      <a href="contact.html" class="btn btn-gold">Request a Quote <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
+      <a href="https://wa.me/917984794891" class="btn btn-outline-cream" target="_blank">WhatsApp Us</a>
+    </div>
+  </div>
+</section>
+
+<div id="footer-placeholder"></div>
+<script src="components.js"></script>
+<script src="main.js"></script>
+</body>
+</html>

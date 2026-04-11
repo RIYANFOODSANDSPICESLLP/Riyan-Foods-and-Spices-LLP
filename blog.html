@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>News & Insights — Riyan Foods and Spices LLP</title>
+<meta name="description" content="Spice trade news, market price updates, regulatory changes, and export best practices from Riyan Foods and Spices LLP.">
+<meta name="keywords" content="Indian spice market news, cumin price update, spice export regulations India, APEDA spice export news">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='4' fill='%230E0E0E'/><text x='50%25' y='54%25' dominant-baseline='middle' text-anchor='middle' font-family='Georgia,serif' font-size='20' font-weight='600' fill='%23C2A56D'>R</text></svg>">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<style>
+.blog-hero{padding:140px 5vw 80px;background:var(--ink);position:relative;overflow:hidden}
+.blog-hero::before{content:'';position:absolute;inset:0;background:radial-gradient(ellipse 60% 55% at 60% 35%,rgba(194,165,109,.07),transparent 65%)}
+.blog-hero-inner{max-width:1280px;margin:0 auto;position:relative;z-index:1}
+
+.blog-body{padding:5rem 5vw 8rem;background:var(--ink)}
+.blog-inner{max-width:1280px;margin:0 auto}
+
+/* Featured */
+.blog-featured{display:grid;grid-template-columns:1.5fr 1fr;gap:3px;margin-bottom:3px}
+.blog-card{position:relative;overflow:hidden;cursor:pointer;background:#111}
+.blog-card-img{width:100%;aspect-ratio:16/9;position:relative;overflow:hidden}
+.blog-card-img.tall{aspect-ratio:4/5}
+.blog-card-thumb{width:100%;height:100%;transition:transform .55s ease;background-size:cover;background-position:center}
+.blog-card:hover .blog-card-thumb{transform:scale(1.04)}
+.blog-card-body{padding:1.8rem}
+.blog-cat{font-size:.62rem;letter-spacing:.18em;text-transform:uppercase;color:var(--gold);margin-bottom:.5rem;display:block}
+.blog-title{font-family:var(--serif);font-size:1.2rem;color:var(--cream);line-height:1.35;margin-bottom:.6rem;transition:color .25s}
+.blog-card:hover .blog-title{color:var(--gold)}
+.blog-title.large{font-size:1.55rem}
+.blog-meta{font-size:.72rem;color:rgba(246,243,237,.35);letter-spacing:.06em}
+.blog-excerpt{font-size:.82rem;color:rgba(246,243,237,.42);line-height:1.7;margin-top:.6rem}
+.blog-card-img .blog-overlay{position:absolute;inset:0;background:linear-gradient(to top,rgba(14,14,14,.85) 0%,transparent 60%)}
+.blog-card-img .blog-info{position:absolute;bottom:0;left:0;right:0;padding:1.5rem}
+
+/* Grid */
+.blog-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:3px;margin-top:3px}
+
+/* Sidebar style for 2nd column featured */
+.blog-side{display:flex;flex-direction:column;gap:3px}
+.blog-side .blog-card{flex:1}
+
+.pagination{display:flex;gap:8px;margin-top:3.5rem;justify-content:center}
+.page-btn{width:38px;height:38px;border:1px solid var(--border-dark);border-radius:var(--radius);display:flex;align-items:center;justify-content:center;font-size:.8rem;color:rgba(246,243,237,.45);cursor:pointer;transition:all .25s}
+.page-btn:hover,.page-btn.active{border-color:var(--gold);color:var(--gold);background:rgba(194,165,109,.07)}
+
+/* Topics */
+.topics-bar{display:flex;gap:10px;flex-wrap:wrap;margin-bottom:3.5rem}
+.topic-btn{padding:7px 18px;border:1px solid var(--border-dark);border-radius:2px;font-size:.72rem;letter-spacing:.1em;text-transform:uppercase;color:rgba(246,243,237,.45);cursor:pointer;transition:all .25s;background:transparent;font-family:var(--sans)}
+.topic-btn:hover,.topic-btn.active{border-color:var(--gold);color:var(--gold);background:rgba(194,165,109,.06)}
+
+@media(max-width:900px){.blog-featured{grid-template-columns:1fr}.blog-grid{grid-template-columns:1fr 1fr}}
+@media(max-width:560px){
+  .blog-hero{padding:100px 4vw 55px}
+  .blog-body{padding:4rem 4vw 5rem}
+  .topics-bar{flex-nowrap:nowrap;overflow-x:auto;flex-wrap:nowrap;-webkit-overflow-scrolling:touch;gap:8px;scrollbar-width:none}
+  .topics-bar::-webkit-scrollbar{display:none}
+  .topic-btn{white-space:nowrap;flex-shrink:0;padding:6px 14px;font-size:.68rem}
+  .blog-featured{grid-template-columns:1fr !important}
+  .blog-side{gap:2px}
+  .blog-grid{grid-template-columns:1fr !important;gap:2px}
+  .blog-card-body{padding:1.2rem}
+  .blog-title{font-size:1rem}
+  .blog-title.large{font-size:1.15rem}
+  .blog-excerpt{font-size:.78rem}
+  .blog-card-img.tall{aspect-ratio:4/3}
+}
+@media(max-width:560px){.blog-hero{padding:110px 4vw 60px}.blog-body{padding:4rem 4vw 6rem}.blog-grid{grid-template-columns:1fr}}
+</style>
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Riyan Foods and Spices LLP">
+  <meta property="og:title" content="News & Insights — Riyan Foods and Spices LLP">
+  <meta property="og:description" content="Spice trade news, market price updates, regulatory changes, and export best practices from Riyan Foods and Spices LLP.">
+  <meta property="og:image" content="https://riyanspices.com/og-image.jpg">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="News & Insights — Riyan Foods and Spices LLP">
+  <meta name="twitter:description" content="Spice trade news, market price updates, regulatory changes, and export best practices from Riyan Foods and Spices LLP.">
+  <meta name="robots" content="index, follow">
+  <meta name="author" content="Riyan Foods and Spices LLP">
+</head>
+<body>
+<div id="nav-placeholder"></div>
+
+<section class="blog-hero">
+<div class="blog-hero-inner">
+  <div class="page-hero-breadcrumb"><a href="index.html">Home</a><span>›</span> News & Insights</div>
+  <div class="section-eyebrow reveal">From the Field</div>
+  <h1 class="section-title reveal d1">Spice trade news &amp;<br><em>export market insights</em></h1>
+  <div class="gold-line reveal d2"></div>
+  <p class="section-sub reveal d2" style="max-width:520px">Industry updates, market price movements, regulatory changes, and export best practices from Riyan's team on the ground.</p>
+</div>
+</section>
+
+<section class="blog-body">
+<div class="blog-inner">
+  <div class="topics-bar reveal">
+    <button class="topic-btn active">All</button>
+    <button class="topic-btn">Market Prices</button>
+    <button class="topic-btn">Regulations</button>
+    <button class="topic-btn">Product Updates</button>
+    <button class="topic-btn">Export Tips</button>
+    <button class="topic-btn">Industry News</button>
+  </div>
+
+  <!-- Featured -->
+  <div class="blog-featured reveal">
+    <div class="blog-card">
+      <div class="blog-card-img tall">
+        <div class="blog-card-thumb" style="background:radial-gradient(ellipse at 40%40%,#604012,#100A02)"></div>
+        <div class="blog-overlay"></div>
+        <div class="blog-info">
+          <span class="blog-cat">Market Prices</span>
+          <div class="blog-title large">Cumin Prices Stabilise After Record 2023 — What Buyers Should Expect in 2025</div>
+          <div class="blog-meta">December 2024 · 5 min read</div>
+        </div>
+      </div>
+    </div>
+    <div class="blog-side">
+      <div class="blog-card">
+        <div class="blog-card-img" style="aspect-ratio:16/8">
+          <div class="blog-card-thumb" style="background:radial-gradient(ellipse at 50%40%,#CB8A0A,#2A1C02)"></div>
+          <div class="blog-overlay"></div>
+          <div class="blog-info">
+            <span class="blog-cat">Regulations</span>
+            <div class="blog-title">EU Pesticide MRL Changes 2025 — Impact on Indian Spice Exporters</div>
+            <div class="blog-meta">November 2024 · 4 min read</div>
+          </div>
+        </div>
+      </div>
+      <div class="blog-card">
+        <div class="blog-card-img" style="aspect-ratio:16/8">
+          <div class="blog-card-thumb" style="background:radial-gradient(ellipse at 50%40%,#4A7C1F,#0E1606)"></div>
+          <div class="blog-overlay"></div>
+          <div class="blog-info">
+            <span class="blog-cat">Product Update</span>
+            <div class="blog-title">Moringa Powder Demand Surge: African &amp; European Markets Lead Growth</div>
+            <div class="blog-meta">October 2024 · 3 min read</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Grid -->
+  <div class="blog-grid reveal d1">
+    <div class="blog-card">
+      <div class="blog-card-img"><div class="blog-card-thumb" style="background:radial-gradient(ellipse at 60%30%,#901A1A,#180606)"></div></div>
+      <div class="blog-card-body">
+        <span class="blog-cat">Export Tips</span>
+        <div class="blog-title">How to Structure an LC for Indian Spice Imports: Buyer's Checklist</div>
+        <div class="blog-meta">September 2024 · 6 min read</div>
+        <div class="blog-excerpt">A practical guide for importers on setting up Letter of Credit terms that work for both parties...</div>
+      </div>
+    </div>
+    <div class="blog-card">
+      <div class="blog-card-img"><div class="blog-card-thumb" style="background:radial-gradient(ellipse at 40%50%,#6B7C35,#161C06)"></div></div>
+      <div class="blog-card-body">
+        <span class="blog-cat">Industry News</span>
+        <div class="blog-title">India's Spice Export Hits Record $4.5 Billion in FY2023–24</div>
+        <div class="blog-meta">August 2024 · 3 min read</div>
+        <div class="blog-excerpt">APEDA data confirms India's spice exports crossed a record high, with cumin and chilli leading the surge...</div>
+      </div>
+    </div>
+    <div class="blog-card">
+      <div class="blog-card-img"><div class="blog-card-thumb" style="background:radial-gradient(ellipse at 40%60%,#8C5F06,#2A1C02)"></div></div>
+      <div class="blog-card-body">
+        <span class="blog-cat">Regulations</span>
+        <div class="blog-title">FSSAI Update: New Contaminant Limits for Curcumin in Turmeric Products</div>
+        <div class="blog-meta">July 2024 · 4 min read</div>
+        <div class="blog-excerpt">Understanding the latest FSSAI notification on acceptable curcumin thresholds and what it means for export batches...</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="pagination reveal">
+    <div class="page-btn active">1</div>
+    <div class="page-btn">2</div>
+    <div class="page-btn">3</div>
+    <div class="page-btn">→</div>
+  </div>
+</div>
+</section>
+
+<div id="footer-placeholder"></div>
+<script src="components.js"></script><script src="main.js"></script>
+<script>
+document.querySelectorAll('.topic-btn').forEach(b=>b.addEventListener('click',()=>{document.querySelectorAll('.topic-btn').forEach(x=>x.classList.remove('active'));b.classList.add('active')}));
+</script>
+</body></html>

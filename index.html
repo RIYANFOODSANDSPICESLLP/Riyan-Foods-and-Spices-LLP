@@ -1,0 +1,721 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Riyan Foods and Spices LLP — Premium Indian Spice Exporters</title>
+<meta name="description" content="APEDA, FSSAI & Spices Board certified Indian agri-commodity exporter. Spices, Grains, Pulses, Millets & Dehydrated products. 48+ countries. Get a quote today.">
+<meta name="keywords" content="Indian agri-commodity exporter, spice exporter Gujarat, APEDA registered exporter, cumin seeds export, turmeric powder export, pulses grains millets export India">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='4' fill='%230E0E0E'/><text x='50%25' y='54%25' dominant-baseline='middle' text-anchor='middle' font-family='Georgia,serif' font-size='20' font-weight='600' fill='%23C2A56D'>R</text></svg>">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<style>
+/* ── HERO ── */
+#hero {
+  min-height: 100svh;
+  display: flex; align-items: center; justify-content: center;
+  position: relative; overflow: hidden;
+  padding: 100px 5vw 60px;
+}
+.hero-bg {
+  position: absolute; inset: 0;
+  background:
+    radial-gradient(ellipse 80% 55% at 65% 35%, rgba(194,165,109,0.09), transparent 60%),
+    radial-gradient(ellipse 50% 70% at 15% 80%, rgba(107,142,35,0.06), transparent 60%),
+    linear-gradient(150deg, #0E0E0E 0%, #111009 55%, #0E0E0E 100%);
+}
+.hero-dots {
+  position: absolute; inset: 0; pointer-events: none;
+  background-image: radial-gradient(circle, rgba(194,165,109,0.055) 1px, transparent 1px);
+  background-size: 44px 44px;
+  animation: dotDrift 40s linear infinite;
+}
+@keyframes dotDrift { to { background-position: 44px 44px; } }
+
+.hero-content {
+  position: relative; z-index: 2;
+  text-align: center; max-width: 860px;
+  margin: 0 auto;
+}
+.hero-badge {
+  display: inline-flex; align-items: center; gap: 10px;
+  font-size: 0.68rem; letter-spacing: 0.22em; text-transform: uppercase;
+  color: var(--gold); margin-bottom: 2rem;
+  opacity: 0; animation: fadeUp 0.7s 0.3s forwards;
+}
+.hero-badge::before, .hero-badge::after {
+  content: ''; display: block; width: 32px; height: 1px;
+  background: var(--gold); opacity: 0.45;
+}
+.hero-h1 {
+  font-family: var(--serif);
+  font-size: clamp(2.4rem, 6vw, 5rem);
+  font-weight: 500; line-height: 1.1;
+  color: var(--cream); margin-bottom: 1.6rem;
+  opacity: 0; animation: fadeUp 0.8s 0.5s forwards;
+}
+.hero-h1 em { font-style: italic; color: var(--gold); }
+.hero-sub {
+  font-size: clamp(0.92rem, 1.6vw, 1.1rem);
+  color: rgba(246,243,237,0.55); line-height: 1.8;
+  max-width: 560px; margin: 0 auto 2.8rem;
+  opacity: 0; animation: fadeUp 0.8s 0.7s forwards;
+}
+.hero-btns {
+  display: flex; gap: 14px; justify-content: center; flex-wrap: wrap;
+  opacity: 0; animation: fadeUp 0.8s 0.9s forwards;
+}
+.hero-scroll {
+  position: absolute; bottom: 2.2rem; left: 50%; transform: translateX(-50%);
+  display: flex; flex-direction: column; align-items: center; gap: 8px;
+  opacity: 0; animation: fadeUp 0.8s 1.4s forwards;
+}
+.hero-scroll-line {
+  width: 1px; height: 44px;
+  background: linear-gradient(to bottom, var(--gold), transparent);
+  animation: scrollPulse 2.2s ease-in-out infinite;
+}
+@keyframes scrollPulse { 0%,100%{opacity:1;transform:scaleY(1)} 50%{opacity:0.3;transform:scaleY(0.5)} }
+.hero-scroll span {
+  font-size: 0.6rem; letter-spacing: 0.2em; text-transform: uppercase;
+  color: rgba(246,243,237,0.28);
+}
+.hero-side-stats {
+  position: absolute; right: 5vw; top: 50%; transform: translateY(-50%);
+  display: flex; flex-direction: column; gap: 2rem; z-index: 2;
+  opacity: 0; animation: fadeLeft 0.9s 1.1s forwards;
+}
+.hero-stat { text-align: right; }
+.hero-stat-n {
+  font-family: var(--serif); font-size: 2.2rem; font-weight: 600;
+  color: var(--gold); line-height: 1;
+}
+.hero-stat-l {
+  font-size: 0.64rem; letter-spacing: 0.14em; text-transform: uppercase;
+  color: rgba(246,243,237,0.35); margin-top: 4px;
+}
+@keyframes fadeUp { from{opacity:0;transform:translateY(20px)} to{opacity:1;transform:translateY(0)} }
+@keyframes fadeLeft { from{opacity:0;transform:translateX(18px)} to{opacity:1;transform:translateX(0)} }
+
+/* ── TRUST BAND ── */
+#trust-band {
+  background: var(--cream); padding: 0;
+  overflow: hidden;
+}
+.trust-grid {
+  display: grid; grid-template-columns: repeat(4, 1fr);
+}
+.trust-cell {
+  padding: 3.2rem 2rem;
+  border-right: 1px solid var(--border-light);
+  text-align: center;
+  transition: background 0.28s;
+  cursor: default;
+}
+.trust-cell:last-child { border-right: none; }
+.trust-cell:hover { background: rgba(14,14,14,0.025); }
+.trust-icon-wrap {
+  width: 50px; height: 50px; border-radius: 50%;
+  border: 1px solid rgba(194,165,109,0.3);
+  display: flex; align-items: center; justify-content: center;
+  margin: 0 auto 1.2rem;
+}
+.trust-icon-wrap svg { width: 22px; height: 22px; color: var(--gold); }
+.trust-num {
+  font-family: var(--serif); font-size: 2.6rem; font-weight: 600;
+  color: var(--ink); line-height: 1;
+}
+.trust-label {
+  font-size: 0.72rem; letter-spacing: 0.1em; text-transform: uppercase;
+  color: rgba(14,14,14,0.45); margin-top: 0.4rem;
+}
+.trust-tags { display: flex; flex-wrap: wrap; gap: 6px; justify-content: center; margin-top: 0.8rem; }
+.trust-tag {
+  font-size: 0.58rem; letter-spacing: 0.1em; text-transform: uppercase;
+  padding: 3px 9px; border-radius: 2px;
+  background: rgba(14,14,14,0.05); border: 1px solid rgba(14,14,14,0.1);
+  color: rgba(14,14,14,0.5);
+}
+
+/* ── PRODUCTS ── */
+#products-section { padding: 7rem 5vw; background: var(--ink); }
+.products-header {
+  display: flex; justify-content: space-between; align-items: flex-end;
+  max-width: 1280px; margin: 0 auto 3.5rem;
+  gap: 1.5rem; flex-wrap: wrap;
+}
+.products-mosaic {
+  max-width: 1280px; margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1.4fr 1fr 1fr;
+  grid-template-rows: 320px 320px;
+  gap: 3px;
+}
+.p-card {
+  position: relative; overflow: hidden; cursor: pointer;
+  background: #111;
+}
+.p-card:first-child { grid-row: span 2; }
+.p-bg {
+  position: absolute; inset: 0;
+  background-size: cover; background-position: center;
+  transition: transform 0.65s cubic-bezier(0.25,0.46,0.45,0.94);
+}
+.p-card:hover .p-bg { transform: scale(1.07); }
+.p-overlay {
+  position: absolute; inset: 0;
+  background: linear-gradient(to top, rgba(10,8,4,0.93) 0%, rgba(10,8,4,0.2) 55%, transparent 100%);
+  transition: opacity 0.3s;
+}
+.p-card:hover .p-overlay { background: linear-gradient(to top, rgba(10,8,4,0.97) 0%, rgba(10,8,4,0.45) 65%, rgba(10,8,4,0.05) 100%); }
+.p-info {
+  position: absolute; bottom: 0; left: 0; right: 0;
+  padding: 1.8rem;
+}
+.p-tag {
+  font-size: 0.6rem; letter-spacing: 0.18em; text-transform: uppercase;
+  color: var(--gold); margin-bottom: 0.4rem; display: block;
+}
+.p-name {
+  font-family: var(--serif); font-size: 1.4rem; font-weight: 500;
+  color: var(--cream); line-height: 1.2; margin-bottom: 0.5rem;
+}
+.p-card:first-child .p-name { font-size: 1.9rem; }
+.p-desc {
+  font-size: 0.8rem; color: rgba(246,243,237,0.48); line-height: 1.6;
+  max-height: 0; overflow: hidden;
+  transition: max-height 0.4s, opacity 0.4s; opacity: 0;
+}
+.p-card:hover .p-desc { max-height: 56px; opacity: 1; }
+.p-link {
+  display: inline-flex; align-items: center; gap: 7px; margin-top: 1rem;
+  font-size: 0.7rem; letter-spacing: 0.12em; text-transform: uppercase;
+  color: var(--gold); transition: gap 0.28s;
+}
+.p-link:hover { gap: 12px; }
+.p-link svg { width: 13px; height: 13px; }
+
+/* Spice gradients */
+.bg-cumin    { background: radial-gradient(ellipse at 30% 40%, #604012 0%, #3A2408 50%, #180E02 100%); }
+.bg-chilli   { background: radial-gradient(ellipse at 60% 30%, #901A1A 0%, #5C0E0E 50%, #2A0606 100%); }
+.bg-turmeric { background: radial-gradient(ellipse at 40% 60%, #CB8A0A 0%, #8C5F06 50%, #3A2602 100%); }
+.bg-moringa  { background: radial-gradient(ellipse at 50% 40%, #4A7C1F 0%, #2E5012 50%, #121C06 100%); }
+.bg-coriander{ background: radial-gradient(ellipse at 40% 50%, #6B7C35 0%, #4A5A1A 50%, #1C2208 100%); }
+.spice-tex {
+  position: absolute; inset: 0; opacity: 0.5;
+  background-image:
+    radial-gradient(circle at 20% 30%, rgba(255,255,255,0.05) 1px, transparent 1px),
+    radial-gradient(circle at 70% 65%, rgba(255,255,255,0.04) 1px, transparent 1px),
+    radial-gradient(circle at 45% 80%, rgba(255,255,255,0.06) 1px, transparent 1px);
+  background-size: 9px 9px, 13px 13px, 7px 7px;
+}
+
+/* ── WHY US ── */
+#why-section { padding: 7rem 5vw; background: var(--cream); }
+.why-grid { max-width: 1280px; margin: 0 auto; display: grid; grid-template-columns: 1fr 1fr; gap: 5rem; align-items: center; }
+.why-features { margin-top: 2.5rem; }
+.why-feat {
+  display: flex; align-items: flex-start; gap: 1.3rem;
+  padding: 1.5rem 0; border-bottom: 1px solid var(--border-light);
+  transition: padding-left 0.28s; cursor: default;
+}
+.why-feat:first-child { border-top: 1px solid var(--border-light); }
+.why-feat:hover { padding-left: 6px; }
+.why-feat-ico {
+  width: 42px; height: 42px; flex-shrink: 0; border-radius: 50%;
+  border: 1px solid rgba(194,165,109,0.22); background: rgba(194,165,109,0.07);
+  display: flex; align-items: center; justify-content: center;
+}
+.why-feat-ico svg { width: 18px; height: 18px; color: var(--gold); }
+.why-feat-title { font-family: var(--serif); font-size: 1.05rem; font-weight: 500; color: var(--ink); margin-bottom: 0.25rem; }
+.why-feat-desc { font-size: 0.82rem; color: rgba(14,14,14,0.48); line-height: 1.65; }
+
+.why-visual { display: grid; grid-template-columns: 1fr 1fr; gap: 3px; }
+.wv-block { position: relative; overflow: hidden; }
+.wv-block:first-child { grid-column: span 2; aspect-ratio: 16/7; }
+.wv-block:not(:first-child) { aspect-ratio: 1; }
+.wv1 { background: radial-gradient(ellipse at 30% 50%, #7A3810 0%, #3D1C08 100%); }
+.wv2 { background: radial-gradient(ellipse at 60% 40%, #5C1010 0%, #1C0505 100%); }
+.wv3 { background: radial-gradient(ellipse at 40% 60%, #4A5A1A 0%, #16190A 100%); }
+.wv-label {
+  position: absolute; bottom: 0.8rem; left: 1rem;
+  font-size: 0.6rem; letter-spacing: 0.14em; text-transform: uppercase;
+  color: rgba(246,243,237,0.4);
+}
+
+/* ── GLOBAL STRIP ── */
+#global-strip { padding: 7rem 5vw; background: var(--ink); overflow: hidden; }
+.global-inner { max-width: 1280px; margin: 0 auto; display: grid; grid-template-columns: 1fr 1.55fr; gap: 5rem; align-items: center; }
+.market-chips { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 2rem; }
+.market-chip {
+  padding: 8px 16px; border: 1px solid var(--border-dark); border-radius: 2px;
+  font-size: 0.73rem; letter-spacing: 0.06em; color: rgba(246,243,237,0.55);
+  transition: border-color 0.25s, color 0.25s, background 0.25s; cursor: default;
+}
+.market-chip:hover, .market-chip.hi { border-color: var(--gold); color: var(--gold); background: rgba(194,165,109,0.06); }
+.map-box {
+  background: rgba(246,243,237,0.02); border: 1px solid var(--border-dark);
+  border-radius: 4px; padding: 2rem; overflow: hidden;
+}
+.map-box svg { width: 100%; height: auto; }
+.pulse-dot { animation: pd 2.5s ease-in-out infinite; }
+@keyframes pd { 0%,100%{opacity:1;r:6} 50%{opacity:0.4;r:10} }
+.tline { stroke-dasharray: 7 5; animation: tl 3s linear infinite; }
+@keyframes tl { to { stroke-dashoffset: -120; } }
+
+/* ── PROCESS PREVIEW ── */
+#process-preview { padding: 7rem 5vw; background: var(--cream); }
+.process-inner { max-width: 1280px; margin: 0 auto; }
+.process-header { text-align: center; margin-bottom: 4.5rem; }
+.steps-row { display: grid; grid-template-columns: repeat(4, 1fr); position: relative; gap: 1rem; }
+.steps-row::before {
+  content: ''; position: absolute; top: 31px; left: 14%; right: 14%;
+  height: 1px; background: linear-gradient(90deg, transparent, rgba(194,165,109,0.35), rgba(194,165,109,0.35), transparent);
+}
+.step { text-align: center; padding: 0 1rem; }
+.step-num {
+  width: 62px; height: 62px; border-radius: 50%;
+  border: 1px solid rgba(194,165,109,0.3); background: var(--cream);
+  display: flex; align-items: center; justify-content: center;
+  margin: 0 auto 1.6rem; position: relative; z-index: 1;
+  font-family: var(--serif); font-size: 1.3rem; font-weight: 500; color: var(--gold);
+  transition: background 0.28s, color 0.28s;
+}
+.step:hover .step-num { background: var(--gold); color: var(--cream); border-color: var(--gold); }
+.step-title { font-family: var(--serif); font-size: 1.05rem; font-weight: 500; color: var(--ink); margin-bottom: 0.5rem; }
+.step-desc { font-size: 0.8rem; color: rgba(14,14,14,0.48); line-height: 1.65; }
+
+/* ── INQUIRY CTA ── */
+#home-cta {
+  padding: 7rem 5vw;
+  background: var(--ink);
+  text-align: center;
+  position: relative; overflow: hidden;
+}
+#home-cta::before {
+  content: ''; position: absolute; top: -150px; left: 50%; transform: translateX(-50%);
+  width: 600px; height: 600px;
+  background: radial-gradient(circle, rgba(194,165,109,0.07), transparent 65%);
+  pointer-events: none;
+}
+.cta-inner { position: relative; z-index: 1; max-width: 660px; margin: 0 auto; }
+.cta-inner .section-title { margin-bottom: 1.2rem; }
+.cta-inner .section-sub { margin: 0 auto 2.5rem; }
+
+/* ══════════════════════════════
+   MOBILE — index specific
+══════════════════════════════ */
+@media (max-width: 1100px) {
+  .hero-side-stats { display: none; }
+}
+
+/* ── Tablet ── */
+@media (max-width: 900px) {
+  /* Trust band */
+  .trust-grid { grid-template-columns: repeat(2, 1fr); }
+  .trust-cell { border-right: none !important; border-bottom: 1px solid var(--border-light); }
+  .trust-cell:nth-child(odd) { border-right: 1px solid var(--border-light) !important; }
+  .trust-cell:nth-child(3),
+  .trust-cell:nth-child(4) { border-bottom: none; }
+
+  /* Products mosaic — 2 col */
+  .products-mosaic {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+  }
+  .p-card:first-child { grid-row: span 1; grid-column: span 2; }
+  .p-card:first-child { aspect-ratio: 16/7; }
+  .p-card:not(:first-child) { aspect-ratio: 4/3; }
+
+  /* Why grid stack */
+  .why-grid { grid-template-columns: 1fr; gap: 3rem; }
+  .why-visual { display: none; }
+
+  /* Global stack */
+  .global-inner { grid-template-columns: 1fr; gap: 3rem; }
+  .market-chips { max-width: 100%; }
+
+  /* Process steps — 2 col */
+  .steps-row { grid-template-columns: repeat(2, 1fr); gap: 2.5rem; }
+  .steps-row::before { display: none; }
+
+  /* CTA buttons */
+  .hero-btns { gap: 12px; }
+
+  /* Products header */
+  .products-header { flex-direction: column; align-items: flex-start; gap: 1.2rem; }
+}
+
+/* ── Mobile ── */
+@media (max-width: 600px) {
+  /* Hero */
+  #hero { padding: 80px 4vw 70px; min-height: 100svh; }
+  .hero-h1 { font-size: clamp(1.85rem, 8.5vw, 2.6rem); }
+  .hero-sub { font-size: 0.88rem; padding: 0 0.5rem; }
+  .hero-btns { flex-direction: column; align-items: center; width: 100%; gap: 10px; }
+  .hero-btns .btn { width: 100%; max-width: 320px; justify-content: center; }
+  .hero-badge { font-size: 0.6rem; gap: 6px; }
+  .hero-badge::before, .hero-badge::after { width: 20px; }
+
+  /* Trust band */
+  .trust-grid { grid-template-columns: 1fr 1fr; }
+  .trust-cell { padding: 1.6rem 0.8rem; border-bottom: 1px solid var(--border-light); }
+  .trust-cell:nth-child(odd) { border-right: 1px solid var(--border-light) !important; }
+  .trust-cell:nth-child(3),
+  .trust-cell:nth-child(4) { border-bottom: none; }
+  .trust-num { font-size: 1.9rem; }
+  .trust-tags { flex-wrap: wrap; gap: 4px; }
+  .trust-tag { font-size: 0.55rem; padding: 2px 7px; }
+
+  /* Products mosaic — single column */
+  .products-mosaic { grid-template-columns: 1fr; gap: 2px; }
+  .p-card:first-child { grid-column: span 1; aspect-ratio: 4/3; }
+  .p-card { aspect-ratio: 4/3 !important; }
+
+  /* Always show product desc on mobile (no hover) */
+  .p-desc { max-height: 60px !important; opacity: 1 !important; }
+  .p-info { padding: 1.2rem; }
+  .p-name { font-size: 1.25rem !important; }
+  .p-link { margin-top: 0.6rem; }
+
+  /* Why section */
+  .why-feat { padding: 1.2rem 0; gap: 1rem; }
+  .why-feat:hover { padding-left: 0; } /* disable hover effect on touch */
+  .why-feat-ico { width: 38px; height: 38px; flex-shrink: 0; }
+  .why-feat-title { font-size: 0.95rem; }
+  .why-feat-desc { font-size: 0.8rem; }
+
+  /* Global presence */
+  .global-inner { gap: 2.5rem; }
+  .market-chips { gap: 7px; }
+  .market-chip { font-size: 0.7rem; padding: 6px 11px; }
+
+  /* Process steps */
+  .steps-row { grid-template-columns: 1fr; gap: 1.8rem; }
+  .step { padding: 0 0.5rem; }
+  .step-num { width: 52px; height: 52px; font-size: 1.1rem; margin-bottom: 1.2rem; }
+  .step-title { font-size: 1rem; }
+  .step-desc { font-size: 0.8rem; }
+
+  /* Home CTA */
+  #home-cta { padding: 5rem 4vw; }
+  #home-cta .hero-btns { flex-direction: column; align-items: center; }
+
+  /* Map box smaller */
+  .map-box { padding: 0.8rem; }
+}
+
+/* ── IMAGE SUPPORT ── */
+/* Gradient still shows as fallback if image missing */
+.p-bg[style*="background-image"] {
+  background-blend-mode: multiply;
+}
+.wv-block[style*="background-image"],
+.wv-block[style*="background-image"] {
+  background-blend-mode: multiply;
+}
+/* Hero bg image overlay blends with gradient */
+.hero-bg[style*="background-image"] {
+  opacity: 0.35;
+}
+</style>
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Riyan Foods and Spices LLP">
+  <meta property="og:title" content="Riyan Foods and Spices LLP — Premium Indian Spice Exporters">
+  <meta property="og:description" content="APEDA, FSSAI & Spices Board certified Indian agri-commodity exporter. Spices, Grains, Pulses, Millets & Dehydrated products. 48+ countries. Get a quote today.">
+  <meta property="og:image" content="https://riyanspices.com/og-image.jpg">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Riyan Foods and Spices LLP — Premium Indian Spice Exporters">
+  <meta name="twitter:description" content="APEDA, FSSAI & Spices Board certified Indian agri-commodity exporter. Spices, Grains, Pulses, Millets & Dehydrated products. 48+ countries. Get a quote today.">
+  <meta name="robots" content="index, follow">
+  <meta name="author" content="Riyan Foods and Spices LLP">
+</head>
+<body>
+
+<div id="nav-placeholder"></div>
+
+<!-- ── HERO ── -->
+<section id="hero">
+  <div class="hero-bg"></div>
+  <div class="hero-img" style="position:absolute;inset:0;background-image:url('images/hero-bg.jpg');background-size:cover;background-position:center;opacity:0.12;z-index:0;"></div>
+  <div class="hero-dots"></div>
+  <div class="hero-content">
+    <div class="hero-badge">Est. 2025 · Bhavnagar, Gujarat · India</div>
+    <h1 class="hero-h1">Premium Indian Agri-Commodities<br><em>Exported Worldwide</em></h1>
+    <p class="hero-sub">Spices · Grains · Pulses · Millets · Dehydrated Products — certified, quality-tested, and shipped from Gujarat to 48+ countries.</p>
+    <div class="hero-btns">
+      <a href="contact.html" class="btn btn-gold">Request a Quote <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
+      <a href="products.html" class="btn btn-outline-cream">View Products</a>
+    </div>
+  </div>
+  <div class="hero-side-stats">
+    <div class="hero-stat"><div class="hero-stat-n">48+</div><div class="hero-stat-l">Countries</div></div>
+    <div class="hero-stat"><div class="hero-stat-n">5</div><div class="hero-stat-l">Certifications</div></div>
+    <div class="hero-stat"><div class="hero-stat-n">500MT</div><div class="hero-stat-l">Monthly Capacity</div></div>
+  </div>
+  <div class="hero-scroll">
+    <div class="hero-scroll-line"></div>
+    <span>Scroll</span>
+  </div>
+</section>
+
+<!-- ── TRUST ── -->
+<section id="trust-band">
+  <div class="trust-grid">
+    <div class="trust-cell reveal">
+      <div class="trust-icon-wrap"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 104 0 2 2 0 012-2h1.064M15 20.488V18a2 2 0 012-2h3.064M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/></svg></div>
+      <div class="trust-num" data-count="48" data-suffix="+">48+</div>
+      <div class="trust-label">Countries </div>
+      <div class="trust-tags"><span class="trust-tag">Africa</span><span class="trust-tag">Asia</span><span class="trust-tag">EU</span><span class="trust-tag">USA</span></div>
+    </div>
+    <div class="trust-cell reveal d1">
+      <div class="trust-icon-wrap"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/></svg></div>
+      <div class="trust-num">5</div>
+      <div class="trust-label">Certifications</div>
+      <div class="trust-tags"><span class="trust-tag">APEDA</span><span class="trust-tag">FSSAI</span><span class="trust-tag">Spices Board</span><span class="trust-tag">IEC</span></div>
+    </div>
+    <div class="trust-cell reveal d2">
+      <div class="trust-icon-wrap"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg></div>
+      <div class="trust-num">15+</div>
+      <div class="trust-label">Export Products</div>
+      <div class="trust-tags"><span class="trust-tag">Spices</span><span class="trust-tag">Grains</span><span class="trust-tag">Pulses</span><span class="trust-tag">Millets</span></div>
+    </div>
+    <div class="trust-cell reveal d3">
+      <div class="trust-icon-wrap"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M20 7l-8-4-8 4m16 0l-8 4m8-4v10l-8 4m0-10L4 7m8 4v10M4 7v10l8 4"/></svg></div>
+      <div class="trust-num" data-count="500" data-suffix="MT+">500MT+</div>
+      <div class="trust-label">Monthly Capacity</div>
+      <div class="trust-tags"><span class="trust-tag">FCL</span><span class="trust-tag">LCL</span><span class="trust-tag">Air</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- ── PRODUCTS ── -->
+<section id="products-section">
+  <div class="products-header">
+    <div>
+      <div class="section-eyebrow reveal">Our Products</div>
+      <h2 class="section-title reveal d1">Sourced from India's<br><em>finest growing regions</em></h2>
+    </div>
+    <a href="products.html" class="btn btn-outline-cream reveal">Full Catalogue</a>
+    <a href="brochure.pdf" class="btn btn-outline-cream reveal">Download Brochure</a>
+  </div>
+  <div class="products-mosaic reveal">
+    <div class="p-card">
+      <div class="p-bg bg-cumin" style="background-image: url('images/cumin-card.jpg'); background-size: cover; background-position: center;"><div class="spice-tex"></div></div>
+      <div class="p-overlay"></div>
+      <div class="p-info">
+        <span class="p-tag">Rajasthan Origin · Premium Grade</span>
+        <div class="p-name">Cumin Seeds</div>
+        <div class="p-desc">Bold, earthy aroma. EU-compliant residue levels. Available in 25kg & 50kg bags, FCL/LCL.</div>
+        <a href="product-cumin.html" class="p-link">View Details <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
+      </div>
+    </div>
+    <div class="p-card">
+      <div class="p-bg bg-chilli" style="background-image: url('images/chilli-card.jpg'); background-size: cover; background-position: center;"><div class="spice-tex"></div></div>
+      <div class="p-overlay"></div>
+      <div class="p-info">
+        <span class="p-tag">Andhra · High ASTA</span>
+        <div class="p-name">Red Chilli Powder</div>
+        <div class="p-desc">ASTA 100–150+. Microbiology tested. Custom blend available.</div>
+        <a href="product-chilli.html" class="p-link">View Details <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
+      </div>
+    </div>
+    <div class="p-card">
+      <div class="p-bg bg-turmeric" style="background-image: url('images/turmeric-card.jpg'); background-size: cover; background-position: center;"><div class="spice-tex"></div></div>
+      <div class="p-overlay"></div>
+      <div class="p-info">
+        <span class="p-tag">Erode · High Curcumin</span>
+        <div class="p-name">Turmeric Powder</div>
+        <div class="p-desc">3–5% curcumin, steam sterilised. Pharma-grade available.</div>
+        <a href="product-turmeric.html" class="p-link">View Details <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
+      </div>
+    </div>
+    <div class="p-card">
+      <div class="p-bg bg-moringa" style="background-image: url('images/moringa-card.jpg'); background-size: cover; background-position: center;"><div class="spice-tex"></div></div>
+      <div class="p-overlay"></div>
+      <div class="p-info">
+        <span class="p-tag">Tamil Nadu · Organic Available</span>
+        <div class="p-name">Moringa Powder</div>
+        <div class="p-desc">Spray-dried & drum-dried. EU wellness market favourite.</div>
+        <a href="product-moringa.html" class="p-link">View Details <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
+      </div>
+    </div>
+    <div class="p-card">
+      <div class="p-bg bg-coriander" style="background-image: url('images/coriander-card.jpg'); background-size: cover; background-position: center;"><div class="spice-tex"></div></div>
+      <div class="p-overlay"></div>
+      <div class="p-info">
+        <span class="p-tag">MP Origin · Split & Whole</span>
+        <div class="p-name">Coriander</div>
+        <div class="p-desc">Eagle & scooter variety. Whole, split, powder. Machine-graded.</div>
+        <a href="product-coriander.html" class="p-link">View Details <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ── WHY US ── -->
+<section id="why-section">
+  <div class="why-grid container">
+    <div>
+      <div class="section-eyebrow olive reveal">Why Choose Us</div>
+      <h2 class="section-title dark reveal d1">A partner built for<br><em style="color:var(--olive-dark)">long-term trade</em></h2>
+      <div class="gold-line reveal d2"></div>
+      <p class="section-sub dark reveal d2">From origin to your warehouse, each process is carefully documented, quality-tested, and certified by five government-recognized authorities.</p>
+      <div class="why-features">
+        <div class="why-feat reveal">
+          <div class="why-feat-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/></svg></div>
+          <div><div class="why-feat-title">Global Quality Standards</div><div class="why-feat-desc">APEDA, FSSAI, Spices Board, IEC & GST certified. Quality testing is carried out for pesticides, moisture, aflatoxin, and microbiological parameters as per standard requirements..</div></div>
+        </div>
+        <div class="why-feat reveal d1">
+          <div class="why-feat-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/></svg></div>
+          <div><div class="why-feat-title">Competitive Export Pricing</div><div class="why-feat-desc">Direct farm sourcing. Volume-based pricing for FCL with transparent breakdowns and no hidden charges.</div></div>
+        </div>
+        <div class="why-feat reveal d2">
+          <div class="why-feat-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M9 17a2 2 0 11-4 0 2 2 0 014 0zM19 17a2 2 0 11-4 0 2 2 0 014 0z"/><path d="M13 16V6a1 1 0 00-1-1H4a1 1 0 00-1 1v10a1 1 0 001 1h1m8-1a1 1 0 01-1 1H9m4-1V8a1 1 0 011-1h2.586a1 1 0 01.707.293l3.414 3.414a1 1 0 01.293.707V16a1 1 0 01-1 1h-1m-6-1a1 1 0 001 1h1M5 17a2 2 0 104 0m-4 0a2 2 0 114 0m6 0a2 2 0 104 0m-4 0a2 2 0 114 0"/></svg></div>
+          <div><div class="why-feat-title">Reliable Supply Chain</div><div class="why-feat-desc">Year-round availability, managed cold storage, and on-time dispatch, with reliable support for export requirements.</div></div>
+        </div>
+        <div class="why-feat reveal d3">
+          <div class="why-feat-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M20 7l-8-4-8 4m16 0l-8 4m8-4v10l-8 4m0-10L4 7m8 4v10M4 7v10l8 4"/></svg></div>
+          <div><div class="why-feat-title">Custom Packaging & Private Label</div><div class="why-feat-desc">White-label packaging under your brand, available in PP woven, HDPE, and vacuum-sealed formats for both retail and bulk requirements. Custom packaging options are subject to minimum order quantities (MOQ).</div></div>
+        </div>
+      </div>
+    </div>
+    <div class="why-visual reveal right">
+      <div class="wv-block wv1" style="background-image: url('images/why-cumin.jpg'); background-size: cover; background-position: center;"><div class="spice-tex" style="opacity:0.4"></div><div class="wv-label">Cumin — Unjha Mandi, Gujarat</div></div>
+      <div class="wv-block wv2" style="background-image: url('images/why-chilli.jpg'); background-size: cover; background-position: center;"><div class="spice-tex" style="opacity:0.4"></div><div class="wv-label">Guntur Red Chilli</div></div>
+      <div class="wv-block wv3" style="background-image: url('images/why-moringa.jpg'); background-size: cover; background-position: center;"><div class="spice-tex" style="opacity:0.4"></div><div class="wv-label">Moringa, Tamil Nadu</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- ── GLOBAL ── -->
+<section id="global-strip">
+  <div class="global-inner">
+    <div>
+      <div class="section-eyebrow reveal">Global Reach</div>
+      <h2 class="section-title reveal d1">48+ markets across<br><em>5 continents</em></h2>
+      <div class="gold-line reveal d2"></div>
+      <p class="section-sub reveal d2">Spices move through Mundra, JNPT, and Chennai ports to major importers in West Africa, Southeast Asia, the Middle East, Europe, and North America.</p>
+      <div class="market-chips reveal d3">
+        <div class="market-chip">🇲🇾 Malaysia</div>
+        <div class="market-chip">🇸🇦 Saudi Arabia</div>
+        <div class="market-chip">🇳🇬 Nigeria</div>
+        <div class="market-chip">🇬🇭 Ghana</div>
+        <div class="market-chip">🇺🇸 USA</div>
+        <div class="market-chip">🇩🇪 Germany</div>
+        <div class="market-chip">🇬🇧 UK</div>
+        <div class="market-chip">🇿🇦 South Africa</div>
+        <div class="market-chip">🇦🇺 Australia</div>
+        <div class="market-chip">🇧🇩 Bangladesh</div>
+        <div class="market-chip">🇨🇦 Canada</div>
+        <div class="market-chip">🇯🇵 Japan</div>
+      </div>
+      <div style="margin-top:2rem">
+        <a href="markets.html" class="btn btn-outline-cream">Explore All Markets <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
+      </div>
+    </div>
+    <div class="map-box reveal right">
+      <section class="map-full">
+
+      <svg viewBox="0 0 800 440" xmlns="http://www.w3.org/2000/svg" style="width:100%;height:auto">
+        <defs><filter id="glow3"><feGaussianBlur stdDeviation="2.5" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter></defs>
+        <path d="M75 80 L165 68 L205 90 L225 132 L215 182 L182 204 L160 242 L138 222 L98 212 L68 182 L58 132 Z" fill="rgba(246,243,237,.05)" stroke="rgba(246,243,237,.13)" stroke-width=".8"/>
+        <path d="M148 262 L202 252 L222 282 L234 344 L212 392 L180 402 L152 372 L138 322 L138 282 Z" fill="rgba(246,243,237,.05)" stroke="rgba(246,243,237,.13)" stroke-width=".8"/>
+        <path d="M318 58 L392 53 L412 78 L402 108 L370 118 L338 108 L314 88 Z" fill="rgba(246,243,237,.06)" stroke="rgba(246,243,237,.13)" stroke-width=".8"/>
+        <path d="M318 128 L392 118 L422 148 L432 220 L412 290 L380 320 L338 310 L308 258 L298 198 L304 148 Z" fill="rgba(246,243,237,.05)" stroke="rgba(246,243,237,.13)" stroke-width=".8"/>
+        <path d="M498 148 L542 138 L562 168 L558 210 L532 242 L512 232 L494 202 L488 168 Z" fill="rgba(194,165,109,.14)" stroke="rgba(194,165,109,.5)" stroke-width="1.3"/>
+        <path d="M568 158 L622 152 L642 178 L638 218 L612 228 L586 214 L563 194 Z" fill="rgba(246,243,237,.05)" stroke="rgba(246,243,237,.13)" stroke-width=".8"/>
+        <path d="M578 98 L662 88 L702 118 L692 158 L652 168 L610 153 L574 133 Z" fill="rgba(246,243,237,.05)" stroke="rgba(246,243,237,.13)" stroke-width=".8"/>
+        <path d="M608 288 L692 278 L722 308 L718 358 L672 378 L630 368 L604 338 Z" fill="rgba(246,243,237,.05)" stroke="rgba(246,243,237,.13)" stroke-width=".8"/>
+        <path d="M428 138 L492 128 L502 158 L482 188 L452 193 L424 168 Z" fill="rgba(246,243,237,.05)" stroke="rgba(246,243,237,.13)" stroke-width=".8"/>
+        <path d="M525 192 Q570 198 608 188" fill="none" stroke="rgba(194,165,109,.4)" stroke-width="1.3" class="tline"/>
+        <path d="M510 173 Q480 158 464 166" fill="none" stroke="rgba(194,165,109,.4)" stroke-width="1.3" class="tline" style="animation-delay:-.8s"/>
+        <path d="M505 153 Q450 98 366 84" fill="none" stroke="rgba(194,165,109,.3)" stroke-width="1" class="tline" style="animation-delay:-1.6s"/>
+        <path d="M510 198 Q430 198 370 198" fill="none" stroke="rgba(194,165,109,.35)" stroke-width="1.1" class="tline" style="animation-delay:-.4s"/>
+        <path d="M505 168 Q350 118 173 128" fill="none" stroke="rgba(194,165,109,.22)" stroke-width="1" class="tline" style="animation-delay:-2s"/>
+        <path d="M540 218 Q582 258 660 300" fill="none" stroke="rgba(194,165,109,.3)" stroke-width="1" class="tline" style="animation-delay:-1.2s"/>
+        <path d="M545 162 Q602 132 663 120" fill="none" stroke="rgba(194,165,109,.25)" stroke-width="1" class="tline" style="animation-delay:-.6s"/>
+        <circle cx="525" cy="183" r="7" fill="var(--gold)" filter="url(#glow3)"/>
+        <circle cx="525" cy="183" r="13" fill="none" stroke="rgba(194,165,109,.4)" stroke-width="1" class="pulse-dot"/>
+        <circle cx="525" cy="183" r="20" fill="none" stroke="rgba(194,165,109,.18)" stroke-width="1" class="pulse-dot" style="animation-delay:.7s"/>
+        <circle cx="608" cy="191" r="4.5" fill="rgba(194,165,109,.75)" class="pulse-dot" style="animation-delay:.2s"/>
+        <circle cx="464" cy="168" r="4.5" fill="rgba(194,165,109,.75)" class="pulse-dot" style="animation-delay:.5s"/>
+        <circle cx="364" cy="84" r="4.5" fill="rgba(194,165,109,.75)" class="pulse-dot" style="animation-delay:.8s"/>
+        <circle cx="369" cy="193" r="4.5" fill="rgba(194,165,109,.75)" class="pulse-dot" style="animation-delay:1.1s"/>
+        <circle cx="170" cy="128" r="4.5" fill="rgba(194,165,109,.75)" class="pulse-dot" style="animation-delay:1.4s"/>
+        <circle cx="661" cy="300" r="4.5" fill="rgba(194,165,109,.75)" class="pulse-dot" style="animation-delay:1.7s"/>
+        <circle cx="663" cy="120" r="4.5" fill="rgba(194,165,109,.75)" class="pulse-dot" style="animation-delay:2s"/>
+        <text x="533" y="198" fill="rgba(194,165,109,.8)" font-size="13" font-family="Jost,sans-serif" letter-spacing="1.2">INDIA</text>
+        <text x="616" y="186" fill="rgba(246,243,237,.35)" font-size="13" letter-spacing="1.2" font-family="Jost,sans-serif">SE Asia</text>
+        <text x="472" y="162" fill="rgba(246,243,237,.35)" font-size="13" letter-spacing="1.2" font-family="Jost,sans-serif">Mid East</text>
+        <text x="348" y="78" fill="rgba(246,243,237,.35)" font-size="13" letter-spacing="1.2" font-family="Jost,sans-serif">Europe</text>
+        <text x="342" y="189" fill="rgba(246,243,237,.35)" font-size="13" letter-spacing="1.2" font-family="Jost,sans-serif">Africa</text>
+        <text x="140" y="122" fill="rgba(246,243,237,.35)" font-size="13" letter-spacing="1.2" font-family="Jost,sans-serif">N. America</text>
+      </svg>
+    
+</section>
+      <p style="text-align:center;font-size:0.62rem;letter-spacing:0.14em;text-transform:uppercase;color:rgba(246,243,237,0.2);margin-top:0.8rem">FCL · LCL · Air Freight Routes</p>
+    </div>
+  </div>
+</section>
+
+<!-- ── PROCESS ── -->
+<section id="process-preview">
+  <div class="process-inner">
+    <div class="process-header">
+      <div class="section-eyebrow olive center reveal">How We Work</div>
+      <h2 class="section-title dark reveal d1" style="text-align:center">Our export process, <em style="color:var(--olive-dark)">simplified</em></h2>
+    </div>
+    <div class="steps-row">
+      <div class="step reveal">
+        <div class="step-num">01</div>
+        <div style="font-size:1.5rem;margin-bottom:0.7rem">🌿</div>
+        <div class="step-title">Farm Sourcing</div>
+        <div class="step-desc">Direct procurement from verified farmers and manufacturers across Rajasthan, Andhra Pradesh, Gujarat, and Madhya Pradesh, with full traceability.</div>
+      </div>
+      <div class="step reveal d1">
+        <div class="step-num">02</div>
+        <div style="font-size:1.5rem;margin-bottom:0.7rem">🔬</div>
+        <div class="step-title">Quality Testing</div>
+        <div class="step-desc">In-house and third-party lab testing conducted as required, covering parameters such as moisture, pesticide residue, aflatoxin, ASTA colour value, and microbiology.</div>
+      </div>
+      <div class="step reveal d2">
+        <div class="step-num">03</div>
+        <div style="font-size:1.5rem;margin-bottom:0.7rem">📦</div>
+        <div class="step-title">Processing & Packing</div>
+        <div class="step-desc">Steam sterilisation, grading, and custom packaging with private label printing on PP woven, HDPE, or vacuum bags. Custom packaging options are subject to minimum order quantities (MOQ).</div>
+      </div>
+      <div class="step reveal d3">
+        <div class="step-num">04</div>
+        <div style="font-size:1.5rem;margin-bottom:0.7rem">🚢</div>
+        <div class="step-title">Shipping & Docs</div>
+        <div class="step-desc">FCL/LCL shipments through Mundra, JNPT, and Chennai, with documentation support provided as per shipment requirements, including COO, CoA, phytosanitary, fumigation, and LC processes.</div>
+      </div>
+    </div>
+    <div style="text-align:center;margin-top:3.5rem" class="reveal">
+      <a href="process.html" class="btn btn-outline-dark">Full Process Details <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
+    </div>
+  </div>
+</section>
+
+<!-- ── FINAL CTA ── -->
+<section id="home-cta">
+  <div class="cta-inner">
+    <div class="section-eyebrow center reveal">Get In Touch</div>
+    <h2 class="section-title reveal d1">Ready to source<br><em>premium Indian spices?</em></h2>
+    <div class="gold-line center reveal d2"></div>
+    <p class="section-sub reveal d2">Tell us your requirement. Our export team responds within 24 hours with a competitive quote tailored to your market.</p>
+    <div style="display:flex;gap:14px;justify-content:center;flex-wrap:wrap;margin-top:2.5rem" class="reveal d3">
+      <a href="contact.html" class="btn btn-gold">Get Best Export Price <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
+      <a href="https://wa.me/917984794891" class="btn btn-outline-cream" target="_blank">WhatsApp Us</a>
+    </div>
+  </div>
+</section>
+
+<div id="footer-placeholder"></div>
+
+<script src="components.js"></script>
+<script src="main.js"></script>
+</body>
+</html>
