@@ -64,10 +64,10 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 
   /* ── Active nav link ── */
-  const current = window.location.pathname.split('/').pop() || 'index.html';
+  const current = window.location.pathname.split('/').pop() || '/index';
   document.querySelectorAll('#navbar .nav-links a, #mobile-menu a').forEach(a => {
     const href = a.getAttribute('href') || '';
-    if (href === current || (current === '' && href === 'index.html')) {
+    if (href === current || (current === '' && href === '/index')) {
       a.classList.add('active');
     }
   });
