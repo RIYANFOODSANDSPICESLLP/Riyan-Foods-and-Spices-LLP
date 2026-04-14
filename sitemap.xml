@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
+  <!-- Homepage -->
+  <url>
+    <loc>https://riyanfoodsandspices.com/</loc>
+    <priority>1.00</priority>
+  </url>
+
+  <!-- Main Pages -->
+  <url>
+    <loc>https://riyanfoodsandspices.com/contact</loc>
+    <priority>0.80</priority>
+  </url>
+  <url>
+    <loc>https://riyanfoodsandspices.com/products</loc>
+    <priority>0.80</priority>
+  </url>
+  <url>
+    <loc>https://riyanfoodsandspices.com/markets</loc>
+    <priority>0.80</priority>
+  </url>
+  <url>
+    <loc>https://riyanfoodsandspices.com/process</loc>
+    <priority>0.80</priority>
+  </url>
+
+  <!-- Products -->
+  <url>
+    <loc>https://riyanfoodsandspices.com/product-cumin</loc>
+    <priority>0.70</priority>
+  </url>
+  <url>
+    <loc>https://riyanfoodsandspices.com/product-chilli</loc>
+    <priority>0.70</priority>
+  </url>
+  <url>
+    <loc>https://riyanfoodsandspices.com/product-turmeric</loc>
+    <priority>0.70</priority>
+  </url>
+  <url>
+    <loc>https://riyanfoodsandspices.com/product-coriander</loc>
+    <priority>0.70</priority>
+  </url>
+  <url>
+    <loc>https://riyanfoodsandspices.com/product-moringa</loc>
+    <priority>0.70</priority>
+  </url>
+
+  <!-- Grains & Pulses -->
+  <url>
+    <loc>https://riyanfoodsandspices.com/product-rice</loc>
+    <priority>0.70</priority>
+  </url>
+  <url>
+    <loc>https://riyanfoodsandspices.com/product-maize</loc>
+    <priority>0.70</priority>
+  </url>
+  <url>
+    <loc>https://riyanfoodsandspices.com/product-chickpeas</loc>
+    <priority>0.70</priority>
+  </url>
+  <url>
+    <loc>https://riyanfoodsandspices.com/product-lentils</loc>
+    <priority>0.70</priority>
+  </url>
+  <url>
+    <loc>https://riyanfoodsandspices.com/product-moong</loc>
+    <priority>0.70</priority>
+  </url>
+
+  <!-- Millets -->
+  <url>
+    <loc>https://riyanfoodsandspices.com/product-bajra</loc>
+    <priority>0.70</priority>
+  </url>
+  <url>
+    <loc>https://riyanfoodsandspices.com/product-jowar</loc>
+    <priority>0.70</priority>
+  </url>
+  <url>
+    <loc>https://riyanfoodsandspices.com/product-ragi</loc>
+    <priority>0.70</priority>
+  </url>
+
+  <!-- Powder Products -->
+  <url>
+    <loc>https://riyanfoodsandspices.com/product-onion-powder</loc>
+    <priority>0.70</priority>
+  </url>
+  <url>
+    <loc>https://riyanfoodsandspices.com/product-garlic-powder</loc>
+    <priority>0.70</priority>
+  </url>
+
+  <!-- Brochure -->
+  <url>
+    <loc>https://riyanfoodsandspices.com/brochure.pdf</loc>
+    <priority>0.60</priority>
+  </url>
+
+</urlset>
