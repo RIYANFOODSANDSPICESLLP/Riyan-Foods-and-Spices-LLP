@@ -207,36 +207,6 @@
 
 
 
-<!-- FINAL JS -->
-<script>
-document.getElementById("exportForm").addEventListener("submit", function(e) {
-  e.preventDefault();
-
-  const form = e.target;
-  const data = new FormData(form);
-
-  fetch("https://formspree.io/f/xzdyeqqv", {
-    method: "POST",
-    body: data,
-    headers: {
-      'Accept': 'application/json'
-    }
-  })
-  .then(response => {
-    if (response.ok) {
-      document.getElementById("form-wrap").style.display = "none";
-      document.getElementById("form-success").style.display = "block";
-      form.reset();
-    } else {
-      alert("Form submit failed");
-    }
-  })
-  .catch(() => {
-    alert("Network error");
-  });
-});
-</script>
-
       
     </div>
 
@@ -333,4 +303,36 @@ function submitForm(e) {
   document.getElementById('form-success').classList.add('show');
 }
 </script>
+
+  
+<!-- FINAL JS -->
+<script>
+document.getElementById("exportForm").addEventListener("submit", function(e) {
+  e.preventDefault();
+
+  const form = e.target;
+  const data = new FormData(form);
+
+  fetch("https://formspree.io/f/xzdyeqqv", {
+    method: "POST",
+    body: data,
+    headers: {
+      'Accept': 'application/json'
+    }
+  })
+  .then(response => {
+    if (response.ok) {
+      document.getElementById("form-wrap").style.display = "none";
+      document.getElementById("form-success").style.display = "block";
+      form.reset();
+    } else {
+      alert("Form submit failed");
+    }
+  })
+  .catch(() => {
+    alert("Network error");
+  });
+});
+</script>
+
 </body></html>
