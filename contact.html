@@ -347,4 +347,38 @@ function submitForm(e) {
   document.getElementById('form-success').classList.add('show');
 }
 </script>
+  ...
+<!-- tamaro badho HTML code -->
+
+<script>
+function submitForm(e) {
+  e.preventDefault();
+
+  const form = e.target.closest("form");
+  const data = new FormData(form);
+
+  fetch("https://formspree.io/f/xzdyeqqv", {
+    method: "POST",
+    body: data,
+    headers: {
+      'Accept': 'application/json'
+    }
+  })
+  .then(response => {
+    if (response.ok) {
+      document.getElementById("form-wrap").style.display = "none";
+      document.getElementById("form-success").style.display = "block";
+      form.reset();
+    } else {
+      alert("Something went wrong. Please try again.");
+    }
+  })
+  .catch(() => {
+    alert("Network error. Please try again.");
+  });
+}
+</script>
+
+</body>
+</html>
 </body></html>
