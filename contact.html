@@ -173,22 +173,48 @@
 
       <div class="form-title">Get Best Export Price</div>
       <div class="form-sub">Fill in your requirement. Our team will respond within 24 hours.</div>
+<div class="form-row"> 
+  <div class="f-field"><input type="text" name="name" placeholder="Full Name" required><br><br></div>
+     <div class="f-field"> <input type="text" name="company" placeholder="Company Name"><br><br></div>
+  </div>    
+       <div class="form-row">
+         <div class="f-field">
+  <input type="text" name="country" placeholder="Country" required><br><br></div>
+         <div class="f-field">
+      <input type="email" name="email" placeholder="Email" required><br><br></div>
+       </div>
+          <div class="form-row">
+            <div class="f-field">
+      <input type="tel" name="phone" placeholder="Phone / WhatsApp"><br><br></div>
+            <div class="f-field">
+              <label>Destination Port</label><input type="text" name="port" placeholder="e.g. Port Klang, Malaysia">
+            </div>
+          </div>
 
-      <input class="f-field" type="text" name="name" placeholder="Full Name" required><br><br>
-      <input type="text" name="company" placeholder="Company Name"><br><br>
-      <input type="text" name="country" placeholder="Country" required><br><br>
-      <input type="email" name="email" placeholder="Email" required><br><br>
-      <input type="tel" name="phone" placeholder="Phone"><br><br>
-
-      <select name="product" required>
-        <option value="">Select Product</option>
-        <option>Cumin Seeds</option>
-        <option>Red Chilli Powder</option>
-        <option>Turmeric Powder</option>
-      </select><br><br>
-
-      <textarea name="message" placeholder="Your Requirement"></textarea><br><br>
-
+      
+      <div class="f-field"><label>Product of Interest *</label>
+          <select required name="product">
+            <option value="">Select a product</option>
+            <option>Cumin Seeds</option>
+            <option>Red Chilli Powder</option>
+            <option>Turmeric Powder</option>
+            <option>Moringa Powder</option>
+            <option>Coriander Seeds / Powder</option>
+            <option>Mixed / Multiple Products</option>
+            <option>Other (mention in message)</option>
+          </select>
+        </div>
+<div class="form-row">
+          <div class="f-field"><label>Quantity Required</label><input type="text" name="quantity" placeholder="e.g. 5 MT / 1 FCL"></div>
+          <div class="f-field"><label>Preferred Incoterm</label>
+            <select name="incoterm">
+              <option value="">Select</option>
+              <option>FOB</option><option>CIF</option><option>CFR</option><option>EXW</option><option>Not Sure</option>
+            </select>
+          </div>    
+ <div class="f-field"><label>Message / Specifications</label>
+          <textarea name="message" placeholder="Packaging requirements, certifications needed, grade specifications, LC/TT preference, etc."></textarea>
+        </div>
       <button type="submit" class="form-submit">
         Get Best Export Price →
       </button>
