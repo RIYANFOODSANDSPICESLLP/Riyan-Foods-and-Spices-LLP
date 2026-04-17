@@ -166,56 +166,77 @@
       </a>
     </div>
 <div class="form-card reveal right">
-      <div id="form-wrap">
-        <div class="form-title">Get Best Export Price</div>
-        <div class="form-sub">Fill in your requirement. Our team will respond within 24 hours with a competitive quote.</div>
-        <div class="form-row">
-          <div class="f-field"><label>Full Name *</label><input type="text" placeholder="Your name" required></div>
-          <div class="f-field"><label>Company Name</label><input type="text" placeholder="Your company"></div>
-        </div>
-        <div class="form-row">
-          <div class="f-field"><label>Country *</label><input type="text" placeholder="Your country" required></div>
-          <div class="f-field"><label>Email Address *</label><input type="email" placeholder="you@company.com" required></div>
-        </div>
-        <div class="form-row">
-          <div class="f-field"><label>Phone / WhatsApp</label><input type="tel" placeholder="+1 234 567 8900"></div>
-          <div class="f-field"><label>Destination Port</label><input type="text" placeholder="e.g. Port Klang, Malaysia"></div>
-        </div>
-        <div class="f-field"><label>Product of Interest *</label>
-          <select required>
-            <option value="">Select a product</option>
-            <option>Cumin Seeds</option>
-            <option>Red Chilli Powder</option>
-            <option>Turmeric Powder</option>
-            <option>Moringa Powder</option>
-            <option>Coriander Seeds / Powder</option>
-            <option>Mixed / Multiple Products</option>
-            <option>Other (mention in message)</option>
-          </select>
-        </div>
-        <div class="form-row">
-          <div class="f-field"><label>Quantity Required</label><input type="text" placeholder="e.g. 5 MT / 1 FCL"></div>
-          <div class="f-field"><label>Preferred Incoterm</label>
-            <select>
-              <option value="">Select</option>
-              <option>FOB</option><option>CIF</option><option>CFR</option><option>EXW</option><option>Not Sure</option>
-            </select>
-          </div>
-        </div>
-        <div class="f-field"><label>Message / Specifications</label>
-          <textarea placeholder="Packaging requirements, certifications needed, grade specifications, LC/TT preference, etc."></textarea>
-        </div>
-        <button class="form-submit" onclick="submitForm(event)">Get Best Export Price →</button>
-        <div class="form-note">By submitting, you agree to be contacted by our export team regarding your inquiry.</div>
-      </div>
-      <div class="form-success" id="form-success">
-        <div class="form-success-ico">✅</div>
-        <h3>Inquiry Received!</h3>
-        <p>Thank you. Our export team will review your requirement and respond within 24 business hours with a competitive quote.</p>
-        <div style="margin-top:1.5rem">
-          <a href="/products" class="btn btn-outline-gold">Browse Products</a>
-        </div>
-      </div>
+<div class="form-card">
+  
+  <!-- FORM WRAP -->
+  <div id="form-wrap">
+
+    <form id="exportForm">
+
+      <div class="form-title">Get Best Export Price</div>
+      <div class="form-sub">Fill in your requirement. Our team will respond within 24 hours.</div>
+
+      <input type="text" name="name" placeholder="Full Name" required><br><br>
+      <input type="text" name="company" placeholder="Company Name"><br><br>
+      <input type="text" name="country" placeholder="Country" required><br><br>
+      <input type="email" name="email" placeholder="Email" required><br><br>
+      <input type="tel" name="phone" placeholder="Phone"><br><br>
+
+      <select name="product" required>
+        <option value="">Select Product</option>
+        <option>Cumin Seeds</option>
+        <option>Red Chilli Powder</option>
+        <option>Turmeric Powder</option>
+      </select><br><br>
+
+      <textarea name="message" placeholder="Your Requirement"></textarea><br><br>
+
+      <button type="submit" class="form-submit">
+        Get Best Export Price →
+      </button>
+
+    </form>
+
+  </div>
+
+  <!-- SUCCESS MESSAGE -->
+  <div class="form-success" id="form-success" style="display:none;">
+    <h3>✅ Inquiry Received!</h3>
+    <p>We will contact you within 24 hours.</p>
+  </div>
+
+</div>
+
+<!-- FINAL JS -->
+<script>
+document.getElementById("exportForm").addEventListener("submit", function(e) {
+  e.preventDefault();
+
+  const form = e.target;
+  const data = new FormData(form);
+
+  fetch("https://formspree.io/f/xzdyeqqv", {
+    method: "POST",
+    body: data,
+    headers: {
+      'Accept': 'application/json'
+    }
+  })
+  .then(response => {
+    if (response.ok) {
+      document.getElementById("form-wrap").style.display = "none";
+      document.getElementById("form-success").style.display = "block";
+      form.reset();
+    } else {
+      alert("Form submit failed");
+    }
+  })
+  .catch(() => {
+    alert("Network error");
+  });
+});
+</script>
+
       
     </div>
 
